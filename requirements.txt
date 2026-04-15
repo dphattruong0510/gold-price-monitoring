@@ -1,0 +1,13 @@
+requests 
+beautifulsoup4 
+python-dotenv 
+pandas 
+sqlalchemy 
+matplotlib 
+seaborn 
+pymongo 
+dnspython 
+dlt[postgres,mongodb]
+dbt-core 
+dbt-postgres 
+psycopg2-binary
