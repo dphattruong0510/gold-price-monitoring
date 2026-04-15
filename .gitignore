@@ -7,4 +7,4 @@ images/*.png
 .dbt/
 target/
 logs/
-
+dbt_project/gold_dbt/profiles.yml
