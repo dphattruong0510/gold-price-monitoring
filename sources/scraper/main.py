@@ -3,6 +3,8 @@ from datetime import datetime
 from sources.config.settings import settings
 from sources.scraper.client import fetch_page
 from sources.scraper.parser import parse_gold_prices
+from sources.storage.local_writer import append_to_json
+
 
 def scrape_gold_prices() -> dict:
     html = fetch_page(settings.SOURCE_URL)
@@ -16,6 +18,7 @@ def scrape_gold_prices() -> dict:
 
 def main():
     data = scrape_gold_prices()
+    append_to_json(data)
     print(data)
 
 if __name__ == "__main__":
