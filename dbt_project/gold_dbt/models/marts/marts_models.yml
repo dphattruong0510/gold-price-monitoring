@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: fct_gold_prices_hourly
+    description: "Hourly aggregated gold price metrics by brand."
+    columns:
+      - name: brand
+        tests:
+          - not_null
+
+      - name: price_hour
+        tests:
+          - not_null
+
+      - name: avg_buy_price
+        tests:
+          - not_null
+
+      - name: avg_sell_price
+        tests:
+          - not_null
+
+      - name: data_points
+        tests:
+          - not_null
+
+  - name: fct_gold_prices_daily
+    description: "Daily aggregated gold price metrics by brand."
+    columns:
+      - name: brand
+        tests:
+          - not_null
+
+      - name: price_date
+        tests:
+          - not_null
+
+      - name: avg_buy_price
+        tests:
+          - not_null
+
+      - name: avg_sell_price
+        tests:
+          - not_null
+
+      - name: data_points
+        tests:
+          - not_null
