@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_gold_prices
+    description: "Cleaned staging model joining raw price snapshots with raw entries."
+    columns:
+      - name: price_timestamp
+        description: "Timestamp of the scrape snapshot."
+        tests:
+          - not_null
+
+      - name: price_date
+        description: "Date of the scrape snapshot."
+        tests:
+          - not_null
+
+      - name: brand
+        description: "Gold brand name."
+        tests:
+          - not_null
+
+      - name: buy_price
+        description: "Buy price parsed as numeric."
+        tests:
+          - not_null
+
+      - name: sell_price
+        description: "Sell price parsed as numeric."
+        tests:
+          - not_null

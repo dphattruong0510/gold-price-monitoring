@@ -1,0 +1,14 @@
+gold_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: your_host
+      user: your_user
+      password: your_password
+      port: 5432
+      dbname: postgres
+      schema: gold_marts
+      threads: 1
+      keepalives_idle: 0
+      sslmode: require

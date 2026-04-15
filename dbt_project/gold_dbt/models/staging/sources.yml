@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: gold_raw
+    schema: gold_raw
+    tables:
+      - name: prices
+        description: "Raw parent table loaded from MongoDB snapshots."
+      - name: prices__entries
+        description: "Raw child table normalized from the entries array."
