@@ -7,7 +7,8 @@ matplotlib
 seaborn 
 pymongo 
 dnspython 
-dlt[postgres,mongodb]
+dlt[postgres]
+dlt[mongodb]
 dbt-core 
 dbt-postgres 
 psycopg2-binary
