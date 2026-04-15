@@ -1,3 +1,17 @@
 # Gold Price Monitoring
 
 A simple data pipeline project to scrape gold prices, store raw data, transform it and build analytics outputs.
+
+Scrape website
+   ↓
+Save raw JSON
+   ↓
+Save raw MongoDB
+   ↓
+Load MongoDB → Supabase bằng dlt
+   ↓
+Run dbt models
+   ↓
+Run analysis
+   ↓
+Generate charts
